@@ -1,0 +1,17 @@
+import * as React from 'react'
+import styles from './styles/HomePage.module.scss'
+import { transformStyles } from 'react-dom-basic-kit'
+import { Link, useLocation } from 'react-router-dom'
+import { accountAsyncAction } from 'smoex-common-business'
+import { useToggleToast } from 'react-dom-basic-kit'
+const cx = transformStyles(styles)
+
+type IHomePageProps = {
+  className?: string
+}
+
+export const HomePage: React.FC = (props: any) => {
+  return <section className={cx('home-page')}>HomePage web</section>
+}
+
+export default HomePage
