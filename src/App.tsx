@@ -6,11 +6,9 @@ import { PageRouter, Footer } from 'smoex-common-web'
 import { commonSlice, accountAsyncAction } from 'smoex-common-business'
 import { Provider } from 'react-redux'
 import { createLazyComponent } from 'redux-async-kit'
-import { commonReducer } from 'smoex-common-business'
 
 const store = configureStore({
   injector: commonSlice.injector,
-  reducers: commonReducer,
 })
 
 window['store'] = store

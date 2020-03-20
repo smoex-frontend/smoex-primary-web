@@ -11,7 +11,19 @@ type IHomePageProps = {
 }
 
 export const HomePage: React.FC = (props: any) => {
-  return <section className={cx('home-page')}>HomePage web</section>
+  return (
+    <section className={cx('home-page')}>
+      HomePage web
+      <div className={cx('home-item')}>1</div>
+      <div className={cx('home-item')}>1</div>
+      <div className={cx('home-item')}>1</div>
+      <div className={cx('home-item')}>1</div>
+      <div className={cx('home-item')}>1</div>
+      <div className={cx('home-item')}>1</div>
+      <div className={cx('home-item')}>1</div>
+      <div className={cx('home-item')}>1</div>
+    </section>
+  )
 }
 
 export default HomePage
